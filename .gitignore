@@ -7,4 +7,5 @@ data/*
 !data/company-due-diligence-*.md
 !data/company-cards-glm-*.md
 !data/asrp-strategic-value-*.md
+!data/final-ranking-*.md
 .env
