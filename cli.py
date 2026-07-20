@@ -2,11 +2,14 @@
 """djinni-automation CLI.
 
 Pipeline:
-  python cli.py identity                 # 1. GitHub -> data/identity.md
-  python cli.py scrape --keyword PHP     # 2. djinni -> data/jobs.json
-  python cli.py match                    # 3. score jobs -> data/matches.json
-  python cli.py top --min-score 6        #    ranked table
-  python cli.py letter <job_id>          # 4. cover letter -> data/letters/<id>.md
+  python cli.py identity                        # 1. GitHub -> data/identity.md (personal)
+  python cli.py identity --profile asrp          #    asrp.memory -> data/identity_asrp.md
+  python cli.py scrape --keyword PHP             # 2. djinni -> data/jobs.json
+  python cli.py match                            # 3. score jobs -> data/matches.json
+  python cli.py match --profile asrp             #    same jobs, ASRP business-signal lens
+  python cli.py top --min-score 6                #    ranked table
+  python cli.py top --profile asrp --min-score 6
+  python cli.py letter <job_id>                  # 4. cover letter -> data/letters/<id>.md
 
 Optional:
   python cli.py login                    # save djinni session for authed scraping
@@ -28,12 +31,18 @@ def main() -> None:
 
     p_identity = sub.add_parser("identity", help="Построить профиль из GitHub")
     p_identity.add_argument("--username", default=None)
+    p_identity.add_argument(
+        "--profile", choices=["personal", "asrp"], default="personal",
+        help="personal = кандидат (GitHub-профиль), asrp = компания ASRP (asrp.memory)",
+    )
 
     p_match = sub.add_parser("match", help="Оценить вакансии против профиля")
+    p_match.add_argument("--profile", choices=["personal", "asrp"], default="personal")
     p_match.add_argument("--limit", type=int, help="оценить только первые N вакансий")
     p_match.add_argument("--min-score", type=int, default=0)
 
     p_top = sub.add_parser("top", help="Показать ранжированный список")
+    p_top.add_argument("--profile", choices=["personal", "asrp"], default="personal")
     p_top.add_argument("--min-score", type=int, default=0)
 
     p_letter = sub.add_parser("letter", help="Сгенерировать сопроводительное письмо")
@@ -50,14 +59,13 @@ def main() -> None:
         scrape(pages=args.pages, keyword=args.keyword, query=args.query)
     elif args.command == "identity":
         from djinni.identity import build_identity
-        from djinni.config import GITHUB_USERNAME
-        build_identity(args.username or GITHUB_USERNAME)
+        build_identity(profile=args.profile, username=args.username)
     elif args.command == "match":
         from djinni.matcher import match_jobs
-        match_jobs(min_score_to_show=args.min_score, limit=args.limit)
+        match_jobs(profile=args.profile, min_score_to_show=args.min_score, limit=args.limit)
     elif args.command == "top":
         from djinni.matcher import show_top
-        show_top(min_score=args.min_score)
+        show_top(profile=args.profile, min_score=args.min_score)
     elif args.command == "letter":
         from djinni.cover_letter import generate_letter
         generate_letter(args.job_id, language=args.language)

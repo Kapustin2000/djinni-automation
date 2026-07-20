@@ -3,3 +3,4 @@ beautifulsoup4>=4.12
 anthropic>=0.40
 pydantic>=2.7
 rich>=13.7
+certifi
