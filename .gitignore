@@ -8,4 +8,6 @@ data/*
 !data/company-cards-glm-*.md
 !data/asrp-strategic-value-*.md
 !data/final-ranking-*.md
+!data/interview-experience-*.md
+!data/salary-benchmark-*.md
 .env
