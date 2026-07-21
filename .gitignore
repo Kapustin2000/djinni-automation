@@ -10,4 +10,6 @@ data/*
 !data/final-ranking-*.md
 !data/interview-experience-*.md
 !data/salary-benchmark-*.md
+!data/company-deepdive-*.md
+!data/job-search-addendum-*.md
 .env
