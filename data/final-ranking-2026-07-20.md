@@ -1,10 +1,11 @@
-# Итоговый рейтинг — личный поиск, 2026-07-20
+# Итоговый рейтинг — личный поиск, 2026-07-20 (обновлено 2026-07-21)
 
-Свод трёх слоёв анализа в один финальный список (только личное — ASRP отдельно, см. [asrp-leads-2026-07-20.md](asrp-leads-2026-07-20.md)):
+Свод слоёв анализа в один финальный список (только личное — ASRP отдельно, см. [asrp-leads-2026-07-20.md](asrp-leads-2026-07-20.md)):
 
 1. **[job-search-priority-2026-07-20.md](job-search-priority-2026-07-20.md)** — ручной анализ фита профиля против требований вакансий (Tier A/B/C)
 2. **[company-due-diligence-2026-07-20.md](company-due-diligence-2026-07-20.md)** — Fable, реальный веб-ресерч по 10 приоритетным компаниям (финансирование, отзывы, red flags)
 3. **[company-cards-glm-2026-07-20.md](company-cards-glm-2026-07-20.md)** — GLM 5.2, карточки по всем 75 компаниям сессии, ключевое новое измерение — **тип компании**
+4. **[company-deepdive-summary-2026-07-21.md](company-deepdive-summary-2026-07-21.md)** — GLM 5.2, due diligence + ASRP-ценность по оставшимся 65 компаниям (закрывает пробел — теперь все 75 компаний сессии имеют полный due diligence, не только исходная топ-10)
 
 ## Новое измерение, которое всё меняет: «ясность работодателя»
 
@@ -34,8 +35,8 @@ GLM-карточки вскрыли то, чего не было в исходн
 
 | Вакансия | Компания | Тип | Комментарий |
 |---|---|---|---|
-| AI Application Engineer | N-iX | 🟡 Outsourcing | Использование Claude Code/Codex как ежедневного инструмента — буквально ваша практика |
-| Forward AI Deployment Engineer (FDE) | Sigma Software | 🟡 Outsourcing | Крупный стабильный игрок, деплой автономных агентов — прямое совпадение с AI_ORG |
+| AI Application Engineer | N-iX | 🟡 Outsourcing | Использование Claude Code/Codex как ежедневного инструмента — буквально ваша практика. **Подтверждено (2026-07-21):** DOU 89/100 (3-е место среди 1500+ в рейтинге лучших IT-работодателей 2025), Best Inspiring Workplace Europe #1 (2024); существенных red flags как работодателя не найдено |
+| Forward AI Deployment Engineer (FDE) | Sigma Software | 🟡 Outsourcing | Крупный стабильный игрок, деплой автономных агентов — прямое совпадение с AI_ORG. **Подтверждено (2026-07-21):** DOU 91/100 (Топ-50 UA), компенсация 85%/культура 88%; реальная agentic-AI практика (финал NATO Innovation Challenge, партнёрство NEAR AI) — публичных red flags нет |
 | Senior Full-Stack Developer (AI-Native) | Empat | 🟡 Outsourcing | 146 отзывов на Clutch, 5.0 — одна из лучших клиентских репутаций в подборке |
 | Founding AI Platform Architect (Python+K8s) | CodeTiburon | 🟡 Outsourcing | Компания с 2009 года, не однодневка — но K8s (2 года у вас) и C1 остаются личным разрывом |
 
@@ -47,7 +48,7 @@ GLM-карточки вскрыли то, чего не было в исходн
 |---|---|---|---|
 | Senior Full-Stack Engineer (Node, React) | Sunvery | 🔴 **Агентство** (25 рекрутеров, Львов) | **Понижено из Tier A** — реальный работодатель неизвестен до звонка; сама вакансия «до $7000» принадлежит клиенту, не Sunvery |
 | Senior Full Stack Engineer / Senior DevOps | Metamindz UK ×2 | 🔴 **Агентство** (CTO-led recruitment) | Вилки до $8500-9000 — деньги клиента, не Metamindz; плюс C1 английский — самый высокий языковой барьер во всей подборке |
-| Senior Python AI Engineer (LLM/Multi-Agent) | Seeking Alpha | 🟢 Product | Легитимная известная компания, но C1 требование |
+| Senior Python AI Engineer (LLM/Multi-Agent) | Seeking Alpha | 🟢 Product | Легитимная известная компания, но C1 требование. **Новое (2026-07-21):** на DOU всего 1 отзыв о найме — негативный (шаблонный отказ после тестового без обратной связи); также **не резидент Diia City** (минус для UA-найма); историческая репутационная заметка — упоминалась в исследовании об использовании псевдонимов шорт-селлерами (сама компания не была признана виновной) |
 | Senior AI/LLM Python developer with LangGraph | WorkeronAI | 🟢/🟡 Product/agency-гибрид | Fable: due diligence не пройден (сайт частично на no-code lovable.app, ноль независимых данных о финансировании) — не скам, но и не проверено |
 
 ---
@@ -58,7 +59,7 @@ GLM-карточки вскрыли то, чего не было в исходн
 |---|---|---|---|
 | Backend Engineer (до $20000) | DualEntry | 🟢 Product | Деньги реальные ($90M Series A, Lightspeed/Khosla/GV), но **Glassdoor 2.7/5** — «brutal culture», «people worked into the ground». Откликаться можно, идти — с открытыми глазами |
 | Senior Backend Engineer | 6037 | 🟢 Product (venture partnership внутри Genesis) | Реально стабильно (Genesis-экосистема), но самая конкурентная вакансия подборки (970 просмотров/311 откликов) — нужен максимально конкретный cover letter |
-| Principal DevOps Engineer (AWS) | Adaptiq | 🟡 Outsourcing | Подтверждённый легитимный аутсорсер, но личный разрыв остаётся — «Principal»-уровень чистого DevOps не задокументирован в вашем профиле |
+| Principal DevOps Engineer (AWS) | Adaptiq | 🟡 Outsourcing | Подтверждённый легитимный аутсорсер, но личный разрыв остаётся — «Principal»-уровень чистого DevOps не задокументирован в вашем профиле. **Подтверждено (2026-07-21):** израильский R&D staff-aug вендор с портфелем 20+ tier-1 клиентов (proteanTecs, Gett, Bringg), новых red flags не найдено |
 
 ---
 
@@ -69,6 +70,18 @@ GLM-карточки вскрыли то, чего не было в исходн
 - **Sunvery**: Tier A → Tier B (агентство, не продукт)
 - **Metamindz UK**: остался Tier B, но причина сменилась — было «C1 барьер», стало «C1 барьер + вы претендуете на позицию у неизвестного клиента агентства»
 - **Interloom**: Tier C → Tier S (было «недостаточно данных», ресерч нашёл подтверждённые €14.2M и enterprise-клиентов)
+
+---
+
+## Обновление 2026-07-21: due diligence оставшихся 65 компаний
+
+Расширили due diligence на все 65 компаний сессии, у которых раньше была только базовая GLM-карточка (без финансов/отзывов/red flags). Из личных приоритетных вакансий это затронуло **N-iX, Sigma Software, Seeking Alpha, Adaptiq** — все 4 обновления внесены в таблицы выше, тиры не изменились (все получили подтверждение, а не понижение). Остальные ~61 компания из «оставшихся 65» не пересекаются с личным приоритетным списком (в основном iGaming/generic-outsourcing/агентства, не относящиеся ни к одной вакансии из вашего Tier S/A/B/C) — подробности в [company-deepdive-summary-2026-07-21.md](company-deepdive-summary-2026-07-21.md).
+
+Также расширили сырой поиск на Djinni новыми нишами (fintech/robotics/cybersecurity/data-engineering/Berlin/web3) — новые находки пока не триажированы по тирам, см. [job-search-addendum-2026-07-21.md](job-search-addendum-2026-07-21.md):
+- **Telli** (через агентство PulseRise) — AI voice-agent стартап, реально в Берлине (офис), но требует German C1 (блокер) и интенсивная культура без work-life balance
+- **SUPERAGENT** — AI insurtech, ранняя стадия, due diligence не делался
+- **SpaceQuant/Smart Capital Center** — AI CRE-платформа, необычно низкий языковой барьер (A1) для лид-роли — стоит проверить, почему
+- **JustSoftLab** — LLM data pipelines, прямое совпадение опыта
 
 ---
 
