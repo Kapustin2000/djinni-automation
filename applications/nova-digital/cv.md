@@ -1,6 +1,6 @@
 # Mykhailo Kapustin — Python AI Lead
 
-Berlin, Germany · github.com/Kapustin2000/ · linkedin.com/in/mykhailo-kapustin-55885612a
+kapustinomm@gmail.com · Berlin, Germany · github.com/Kapustin2000/ · linkedin.com/in/mykhailo-kapustin-55885612a
 
 ## Summary
 
