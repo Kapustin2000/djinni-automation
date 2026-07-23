@@ -4,7 +4,7 @@ Berlin, Germany · github.com/Kapustin2000/ · linkedin.com/in/mykhailo-kapustin
 
 ## Summary
 
-Full-stack engineer and researcher with 10+ years across frontend, backend, and DevOps, with the last 2-3 years focused on production LLM/multi-agent systems and graph-based knowledge representation. I lead engineering at ASRP, an independent AI research lab I run on an ongoing basis — its R&D on agent architectures and knowledge graphs directly feeds the quality of what I deliver on client work. EU citizen, Berlin-based, open to full-time, contract, or freelance engagements.
+Backend- and AI-focused engineer with 10+ years of experience, comfortable working across the full stack and with cloud infrastructure (AWS/GCP/Azure) when needed. The last 2-3 years have focused on production LLM/multi-agent systems and graph-based knowledge representation — including tenant-isolated multi-agent runtimes and knowledge-graph pipelines. EU citizen, Berlin-based, open to full-time, contract, or freelance engagements.
 
 ## Skills
 
@@ -12,12 +12,12 @@ Full-stack engineer and researcher with 10+ years across frontend, backend, and 
 - **Languages:** TypeScript/JavaScript, Python, SQL
 - **Backend:** Node.js, FastAPI, GraphQL, tRPC, WebSockets
 - **Frontend:** Vue.js, Nuxt.js, Pinia, React
-- **Cloud/DevOps:** Docker, Terraform, CI/CD, AWS/GCP/Azure
+- **Cloud/Infra:** Docker, Terraform, CI/CD, AWS/GCP/Azure
 - **Databases:** PostgreSQL, Redis, MongoDB, Pinecone
 
 ## Experience
 
-**Lead Engineer — ASRP** (independent AI research lab) · Apr 2023 – Present
+**Co-Founder & CTO — ASRP** (Advanced Scientific Research Projects, US- and KZ-based holding) · Apr 2023 – Present
 - Built a transatlantic research holding from scratch: 10+ products across EdTech, AI, media, and blockchain
 - Built the first prototype of a LangChain-based forecasting platform (GFS) at a hackathon in Berlin (Theta EuroCon)
 
