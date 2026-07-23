@@ -31,10 +31,10 @@ Full-stack engineer and researcher with 10+ years across frontend, backend, and 
 
 11 technical articles on AI agents, infrastructure, and NLP — ~124K combined reads across Habr, Medium, and Hashnode. Selected:
 
-- [Docling in Working with Texts, Languages, and Knowledge](https://habr.com/en/articles/935584/) — 13.9k views. Documents as graphs of typed, linked nodes; LLM-driven graph querying.
-- [Building AI Agent Infrastructure](https://habr.com/en/articles/960154/) — 10k+ views. Filesystem Registry → Package Manager → AgentOps/MCP&A2A — scaling multi-agent systems.
-- [My Personal Exam: MVP LLM Agent on Google ADK](https://habr.com/en/articles/942696/) — 7.8k views. Modular multi-agent architecture, reviewer-agent validation patterns.
-- [Google ADK and "Startup Technical Guide: AI Agents"](https://habr.com/en/articles/953592/) — 5.3k views. Grounding, GraphRAG, and AgentOps for production-reliable agents.
+- [Docling in Working with Texts, Languages, and Knowledge](https://github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles/docling-text-language) — 13.9k views. Documents as graphs of typed, linked nodes; LLM-driven graph querying.
+- [Building AI Agent Infrastructure](https://github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles/ai-agent-infrastructure) — 10k+ views. Filesystem Registry → Package Manager → AgentOps/MCP&A2A — scaling multi-agent systems.
+- [My Personal Exam: MVP LLM Agent on Google ADK](https://github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles/mvp-llm-agent-adk) — 7.8k views. Modular multi-agent architecture, reviewer-agent validation patterns.
+- [Google ADK and "Startup Technical Guide: AI Agents"](https://github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles/google-adk-startup-guide) — 5.3k views. Grounding, GraphRAG, and AgentOps for production-reliable agents.
 - Full list: github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles
 
 ## Education

@@ -20,7 +20,7 @@
 
 Единый современный tech-резюме формат для всех 35 заявок — не Europass, без фото/таблиц/CEFR-полосок.
 
-- **Источник:** markdown (`cv.md`, для чтения/редактуры) + HTML (`cv.html`, реальный источник для рендера) в каждой папке application. Финальный файл на отправку — `cv.pdf`, рендерится из HTML.
+- **Источник:** markdown (`cv.md`, для чтения/редактуры) в каждой папке application. Финальные артефакты на отправку — только `cv.md` (референс) + `cv.pdf`. **`cv.html` — временный build-артефакт, не хранить в папке application** (2026-07-23: убран из `interloom/`): собирать содержимое в HTML на основе `_cv-template.html` + контент из `cv.md`, рендерить в `cv.pdf` через weasyprint, затем удалять `.html`-файл. Мастер-шаблон `_cv-template.html` в корне `applications/` остаётся — это не per-company файл.
 - **GitHub-ссылка в контактах — короткая: `github.com/Kapustin2000/`** (профиль), не `github.com/Kapustin2000/Kapustin2000` (это репозиторий с тем же именем, что и юзернейм — выглядит избыточно в контактной строке). **Исключение:** глубокие ссылки на конкретные файлы/папки внутри репозитория (например, на список публикаций `.../tree/master/publications/technical-articles`) обязаны содержать полный путь `github.com/Kapustin2000/Kapustin2000/...` — иначе ссылка сломана (двойной слэш). Менять короткую форму только в контактной строке header'а, не в глубоких ссылках.
 - **⚠️ Как рендерить (проверено, работает на этой машине):** LibreOffice не установлена — DOCX-путь из skill `docx` недоступен локально. Вместо этого — HTML+CSS → PDF через `weasyprint` (Python, уже установлен, но требует явного указания пути к homebrew-библиотекам):
   ```bash
@@ -99,6 +99,28 @@
 - **Resume Matcher** (personal/published project) — tRPC + TypeScript + Google Vertex AI, PDF resume parsing + job matching.
 
 **Как формулировать в CV/письмах, чтобы не звучало странно:** "Cogit"/"AI_ORG" — упоминать как "a multi-tenant AI-organizations platform I built for a German AI SaaS company" (не "at ASRP"). Роль в ASRP (Co-Founder & CTO) остаётся общим фреймингом карьеры, но конкретно Cogit/AI_ORG — заслуга внутри client engagement, не собственный продукт холдинга.
+
+## Ссылки на публикации — GitHub, не Habr (утверждено 2026-07-23)
+
+**В outbound-документах (CV, cover letter, hi-letter) публикации должны ссылаться на GitHub-страницу статьи, а не на Habr.** Причина: единая точка входа — личный GitHub-профиль, не разрозненные площадки (Habr/Medium/Hashnode). Формат ссылки: `https://github.com/Kapustin2000/Kapustin2000/tree/master/publications/technical-articles/<slug>` (полный путь обязателен — короткая форма `github.com/Kapustin2000/` только в контактной строке header'а, см. правило выше). Просмотры/reads в тексте (13.9k views и т.п.) остаются как есть — это метрика с исходной площадки, просто ссылка ведёт на GitHub. **В `context.md` (внутренний документ) можно оставлять исходные Habr/Medium/Hashnode-ссылки** — это справочный источник, не outbound-документ.
+
+Таблица slug'ов для всех 11 "безопасных" статей (source: GitHub `publications/technical-articles/`):
+
+| Статья | GitHub slug |
+|---|---|
+| Docling in Working with Texts, Languages, and Knowledge | `docling-text-language` |
+| Building AI Agent Infrastructure | `ai-agent-infrastructure` |
+| My Personal Exam: MVP LLM Agent on Google ADK | `mvp-llm-agent-adk` |
+| Google ADK and "Startup Technical Guide: AI Agents" | `google-adk-startup-guide` |
+| How to Integrate Google ADK with a Custom Interface | `google-adk-custom-interface` |
+| Building a Resume Matcher with tRPC, NLP, and Vertex AI | `resume-matcher-trpc` |
+| Building an App Store Review Analysis Pipeline | `app-store-review-analysis` |
+| How a Call Works in Programmable Telephony | `anatomy-of-a-phone-call` |
+| How to Run LLMs Locally with LM Studio | `lm-studio-local-llm-guide` |
+| Voice AI Systems Powered by Jambonz | `jambonz-voice-ai` |
+| Software Development Tools in the Job Market (academic paper, 2018) | не в `technical-articles/` — уточнить путь отдельно, если понадобится в письме |
+
+(GFS-хакатон статья `ai-blockchain-hackathon-theta` — НЕ в списке безопасных, см. предупреждение про GFS/сны ниже, использовать только в абстрактной формулировке без прямой ссылки на статью.)
 
 ## Полный каталог публикаций (23 записи) — что можно использовать в job-заявках, что нет
 
